@@ -13,11 +13,11 @@ Current Tasks
 -----
 
   1. Create pipeline with all WGS analysis tools
-    2. Run on Listeria genomes
+  2. Run on Listeria genomes
   
 Milestones
 -----
-![Milestones](https://www.dropbox.com/s/f232qror8rr4utc/FMPRE_WGS_timeline.png "timeline")
+![Milestones](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/docs/FMPRE_WGS_timeline.png "timeline")
 
 | Status | Milestones| Date  | Description  |
 | -------| ------------- |:------------:| ------------|
