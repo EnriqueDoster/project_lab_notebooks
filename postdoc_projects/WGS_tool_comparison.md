@@ -17,7 +17,7 @@ Current Tasks
   
 Milestones
 -----
-![Miles](https://drive.google.com/drive/u/2/folders/0AFYtL-QXzc3uUk9PVA)
+![Miles](https://drive.google.com/open?id=0B4L_rce4WrUlSk1ReUJDaFlfYkhZRU56cFkwQVZqQVdYc2F3)
 
   1. Create pipeline with all WGS analysis tools
     
