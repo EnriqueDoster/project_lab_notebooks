@@ -13,9 +13,12 @@ Current Tasks
 -----
 
   1. Run CATCH to create baits
+  
     * Optimize with pipeline
+    
     * Test various "design.py" flags
   2. Improve specificity of baits
+  
     * Test kraken and/or blast to identify contaminant sequences
     
 
