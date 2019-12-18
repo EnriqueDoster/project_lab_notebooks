@@ -12,7 +12,6 @@ Main project repository
 Current Tasks
 -----
 
-## Tasks:
   1. Run CATCH to create baits
     * Optimize with pipeline
     * Test various "design.py" flags
