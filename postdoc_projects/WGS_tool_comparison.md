@@ -14,26 +14,25 @@ Current Tasks
 
   1. Create pipeline with all WGS analysis tools
   
-  
 Milestones
 -----
 ![Milestones](https://www.dropbox.com/s/f232qror8rr4utc/FMPRE_WGS_timeline.png?dl=0)
 
-| Status | Milestones    | Date         | Description  |
-| -------| ------------- |:------------:| ------------:|
+| Status | Milestones| Date  | Description  |
+| -------| ------------- |:------------:| ------------|
 | | 1      | Jun 15, 2019  | Download all data, create 15 datasets |
-| | 1 dependencies | ASAP  | Create 15 datasets |
+| | 1.5 | ASAP  | Create 15 datasets |
 |X| 2      | July 31, 2019 | Download CFSAN-SNP, Lyve-SET, Enterobase, kSNP, Moura et al |
 |X| 3      | Aug 1, 2019   | Interim report due |
 | | 4      | Sep 30, 2019  | Develop automated pipeline for functional annotations of domains with IBM |
-| | 5      | Nov 30, 2019  | Execute pipelines on the “Random” Salmonella dataset; troubleshooting and validation  |
+|X| 5      | Nov 30, 2019  | Execute pipelines on the “Random” Salmonella dataset; troubleshooting and validation  |
 | | 6      | Jan 31, 2020  | Execute pipelines on all 15 datasets |
 | | 7      | May 15, 2020  | Analysis |
 | | 8      | Aug 30, 2020  | Manuscript and report preparation |
     
     
     
-Current project status
+Project status
 -----
 
 - December 2019: 
@@ -60,21 +59,11 @@ Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
 
-### 2019-8-13
 
-* Probe design resulted in a total of 24,676 baits using 34 M. haemolytica genomes
+### 2019-5-5
 
-
-### 2019-8-12
-
-* Installed CATCH using anaconda
-* Run "design.py" on 34 M. haemolytica genomes to test probe creation.
-
-```bash
-design.py  all_34_genomes.fa -pl 120 -ps 1 -o test_34genome_probes
-```
-
-### 2019-8-9
+* Troubleshooting the download of SRA data and metadata
+* Attempted a python script to parse SRA metadata and sent Meera some example files, but still need to troubleshoot duplicate rows.
 
 
 
