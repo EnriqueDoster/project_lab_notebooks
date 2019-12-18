@@ -26,6 +26,10 @@ Tasks:
     * On 2019-12-16, finished creating nextflow pipeline to better utilize "design.py"
 - November 2019:
 
+
+
+***
+***
 ***
 Lab journal
 ---------------------------------------------------------------------------------------------------------------
