@@ -17,11 +17,22 @@ Current Tasks
   
 Milestones
 -----
-![Miles](https://drive.google.com/open?id=0B4L_rce4WrUlSk1ReUJDaFlfYkhZRU56cFkwQVZqQVdYc2F3)
+![Milestones](https://www.dropbox.com/s/f232qror8rr4utc/FMPRE_WGS_timeline.png?dl=0)
 
-  1. Create pipeline with all WGS analysis tools
+| Status | Milestones    | Date         | Description  |
+| -------| ------------- |:------------:| ------------:|
+| | 1      | Jun 15, 2019  | Download all data, create 15 datasets |
+| | 1 dependencies | ASAP  | Create 15 datasets |
+|X| 2      | July 31, 2019 | Download CFSAN-SNP, Lyve-SET, Enterobase, kSNP, Moura et al |
+|X| 3      | Aug 1, 2019   | Interim report due |
+| | 4      | Sep 30, 2019  | Develop automated pipeline for functional annotations of domains with IBM |
+| | 5      | Nov 30, 2019  | Execute pipelines on the “Random” Salmonella dataset; troubleshooting and validation  |
+| | 6      | Jan 31, 2020  | Execute pipelines on all 15 datasets |
+| | 7      | May 15, 2020  | Analysis |
+| | 8      | Aug 30, 2020  | Manuscript and report preparation |
     
-
+    
+    
 Current project status
 -----
 
