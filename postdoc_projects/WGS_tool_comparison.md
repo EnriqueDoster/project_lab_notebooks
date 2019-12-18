@@ -1,7 +1,7 @@
 Creating Mannheimia haemolytica sequencing baits
 ------------
 
-Goal: Use the CATCH software to create sequencing baits for Mannheimia haemolytica
+"The overall goal of this project is to support an accurate, reproducible, transparent and uniform approach to whole-genome sequence (WGS) analysis for purposes of outbreak detection and pathogen surveillance. The overarching objective is to demonstrate how different analytic approaches to whole-genome sequence analysis can impact analysis results. Supporting objectives are to evaluate the impacts of 1) dataset, 2) core- vs. pan-genome inclusion, and 3) genome comparison approach (i.e., using SNPs, k-mers, gene-by-gene alleles, or functional domains)."
 
 
 Main project repository
@@ -11,6 +11,13 @@ Main project repository
 
 Current Tasks
 -----
+
+  1. Create pipeline with all WGS analysis tools
+  
+  
+Milestones
+-----
+![Miles](https://drive.google.com/drive/u/2/folders/0AFYtL-QXzc3uUk9PVA)
 
   1. Create pipeline with all WGS analysis tools
     
