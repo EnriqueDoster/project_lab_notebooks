@@ -9,22 +9,41 @@ Main project repository
 [Bait github](https://github.com/EnriqueDoster/bait_creation_pipeline)
 
 
-Current project status
+Current Tasks
 -----
 
-Tasks:
+## Tasks:
   1. Run CATCH to create baits
     * Optimize with pipeline
     * Test various "design.py" flags
   2. Improve specificity of baits
     * Test kraken and/or blast to identify contaminant sequences
+    
 
+Current project status
+-----
 
 - December 2019: 
-  * Goal: Create bait design using all 69 genomes in a single file.
+  * Goal: Create bait design using all 69 genomes in a single file with updated flags.
   * Notes:
     * On 2019-12-16, finished creating nextflow pipeline to better utilize "design.py"
 - November 2019:
+  * Goal: Create design by splitting genomes into smaller groups.
+  * Notes:
+    * Broke genome sequences into groups of 5.
+  * Accomplished: 
+    * Finished first design using all genomes. Combined sequences (239,918) and removed redunant sequences (225,118) using cdhit.
+- October 2019:
+  * Goal: Create bait design using all 69 M haemolytica genomes..
+  * Notes:
+    * Running the 69 genomes at once took way too long and was slowing down the server.
+  * Accomplished: 
+    * Unfortunately, nothing was actually accomplished with a combination of Angus server breakdowns and cancelling the command on Noelle's server to free up computing power for another project.
+- September 2019:
+  * Goal: Create design on test subset of 34 genomes.
+  * Notes:
+  * Accomplished: 
+    * Finished design on 34 genomes resulting in 24,676 baits.
 
 
 ***
