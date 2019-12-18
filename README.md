@@ -1,10 +1,5 @@
-# project_lab_notebooks
-
-Overview
---------
-
-
 # Enrique's lab notebooks
+
 
 Postdoc projects
 ----------------
