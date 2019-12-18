@@ -1,7 +1,8 @@
 # Enrique's lab notebooks and status updates
 
 
-Current tasks:
+## Current tasks:
+### updated December 18,2019
 * Noelle
   * Test run WGS pipeline on large subset of Listeria genomes
   * Run rumen data
