@@ -13,6 +13,7 @@ Current Tasks
 -----
 
   1. Create pipeline with all WGS analysis tools
+    2. Run on Listeria genomes
   
 Milestones
 -----
