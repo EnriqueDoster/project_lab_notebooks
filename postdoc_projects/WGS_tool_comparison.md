@@ -17,7 +17,7 @@ Current Tasks
   
 Milestones
 -----
-![Milestones](https://www.dropbox.com/s/f232qror8rr4utc/FMPRE_WGS_timeline.png?dl=0)
+![Milestones](https://www.dropbox.com/s/f232qror8rr4utc/FMPRE_WGS_timeline.png?dl=0 "timeline")
 
 | Status | Milestones| Date  | Description  |
 | -------| ------------- |:------------:| ------------|
