@@ -52,7 +52,24 @@ Project status
     * 
   * Accomplished: 
     * 
-
+- September 2019:
+  * Goal: Figure out way to identify all SRA values for genometrakr
+  * Notes:
+    * 
+  * Accomplished: 
+    * 
+- August 2019:
+  * Goal: Figure out way to identify all SRA values for genometrakr
+  * Notes:
+    * 
+  * Accomplished: 
+    * 
+- July 2019:
+  * Goal: Figure out way to identify all SRA values for genometrakr
+  * Notes:
+    * 
+  * Accomplished: 
+    *    
 
 
 ***
