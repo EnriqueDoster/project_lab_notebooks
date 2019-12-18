@@ -12,6 +12,14 @@ Main project repository
 Current project status
 -----
 
+Tasks:
+  1. Run CATCH to create baits
+    * Optimize with pipeline
+    * Test various "design.py" flags
+  2. Improve specificity of baits
+    * Test kraken and/or blast to identify contaminant sequences
+
+
 - December 2019: 
   * Goal: Create bait design using all 69 genomes in a single file.
   * Notes:
@@ -21,7 +29,6 @@ Current project status
 
 Lab journal
 -----------------
-
 
 
 ### 2019-8-13
