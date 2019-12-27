@@ -78,12 +78,28 @@ Lab journal
 
 
 
+
+
 ### 2019-5-5
 
 * Troubleshooting the download of SRA data and metadata
 * Attempted a python script to parse SRA metadata and sent Meera some example files, but still need to troubleshoot duplicate rows.
 
 
+### 2019-5-3
+
+* Troubleshooting the download of SRA data and metadata
+* Downloading the genome metadata from the website, https://www.ncbi.nlm.nih.gov/pathogens/isolates#/search/, is not successful because the output file is limited to 10,000 lines.
+* Next goal is to explore the ftp site to download the metadata files that are included in the same directory as the genomes.
+
+
+
+### 2019-5-1
+
+* Using the https://www.ncbi.nlm.nih.gov/pathogens/isolates#/search/ website.
+* Can use search terms to identify only genomes of interest.
+** # Click "Find Isolates Now!", search: taxgroup_name:"Salmonella enterica" OR taxgroup_name:"E.coli and Shigella" OR taxgroup_name:"Listeria monocytogenes"
+* Click the following buttons #then "Expand All", then "Download" as file "IsolateBrowser_full_list.csv"
 
 
 
