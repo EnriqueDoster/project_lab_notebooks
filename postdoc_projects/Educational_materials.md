@@ -1,56 +1,97 @@
-Installation
+Creating Mannheimia haemolytica sequencing baits
 ------------
 
-This section will help you get started with running the AmrPlusPlus pipeline with Nextflow and Docker. This tutorial assumes you will be running the pipeline from a POSIX compatible system such as Linux, Solaris, or OS X.
+Goal: Create educational materials 
 
-Setup
+
+Main project repository
+-----
+[github](https://github.com/EnriqueDoster/Bioinformatic_resources)
+
+
+Current Tasks
 -----
 
-We will go over a typical pipeline setup scenario in which you connect to a remote server, install Nextflow, and download the pipeline source code. For the easist use of AmrPlusPlus, make sure that Singularity is installed and in your $PATH variable. 
-Visit this website for further information:
-https://singularity.lbl.gov/docs-installation
+  1. Run CATCH to create baits
+    
+    * Test various "design.py" flags
+  2. Compare bait design to
+    
 
-If Singularity cannot be installed, configure the "config/local.config" file to specify the absolute PATH to each required bioinformatic tool. Then, change the flag after "-profile" to "local" when running the pipeline.
+Current project status
+-----
+
+- December 2019: 
+  * Goal: Create bait design using all 69 genomes in a single file with updated flags.
+  * Notes:
+    * On 2019-12-16, finished creating nextflow pipeline to better utilize "design.py"
+- November 2019:
+  * Goal: Create design by splitting genomes into smaller groups.
+  * Notes:
+    * Broke genome sequences into groups of 5.
+  * Accomplished: 
+    * Finished first design using all genomes. Combined sequences (239,918) and removed redunant sequences (225,118) using cdhit.
+- October 2019:
+  * Goal: Create bait design using all 69 M haemolytica genomes..
+  * Notes:
+    * Running the 69 genomes at once took way too long and was slowing down the server.
+  * Accomplished: 
+    * Unfortunately, nothing was actually accomplished with a combination of Angus server breakdowns and cancelling the command on Noelle's server to free up computing power for another project.
+- September 2019:
+  * Goal: Create design on test subset of 34 genomes.
+  * Notes:
+  * Accomplished: 
+    * Finished design on 34 genomes resulting in 24,676 baits.
+
+
+***
+Lab journal
+---------------------------------------------------------------------------------------------------------------
+
+
+### 2019-8-13
+
+* Probe design resulted in a total of 24,676 baits using 34 M. haemolytica genomes
+
+
+### 2019-8-12
+
+* Installed CATCH using anaconda
+* Run "design.py" on 34 M. haemolytica genomes to test probe creation.
 
 ```bash
-# username and host address
-$ ssh [USER]@[HOST]
-
-# Check if you have nextflow installed,
-$ nextflow -h
-
-# If not available, install Nextflow
-$ curl -s https://get.nextflow.io | bash
-# If you do not have curl installed, try wget
-# $ wget -qO- https://get.nextflow.io | bash
-
-# give write permissions to user
-$ chmod u+x nextflow
-
-# move nextflow executable to a folder in your PATH environment variable
-$ mv nextflow $HOME/bin
-
-# create a test directory and change into it
-$ mkdir amr_test && cd amr_test
-
-# clone pipeline source code
-$ git clone https://github.com/meglab-metagenomics/amrplusplus_v2.git .
+design.py  all_34_genomes.fa -pl 120 -ps 1 -o test_34genome_probes
 ```
 
-Run a Simple Test
------------------
+### 2019-8-9
 
-We will run a small sample dataset that comes with the pipeline source code. As such, we will not be specifying any input paths as they have already been included. During the program's execution, the required tool dependencies will be accessed using a Singularity container. As there are many tool dependencies, downloading the container could take some time depending on your connection speed.
+* We had a meeting including most collaborators. Below is everyone invited to join the meeting.
+  Woolums, Amelia <amelia.woolums@msstate.edu>
+  Paul Morley <pmorley@cvm.tamu.edu>,
+  Enrique Doster <enriquedoster@gmail.com>,
+  Jonathan Frye <jonathan.frye@ars.usda.gov>,
+  "Clawson, Mike" <mike.clawson@usda.gov>,
+  Sarah Capik <Sarah.Capik@ag.tamu.edu>,
+  "Thoresen, Merrilee" <mt1657@msstate.edu>,
+  Cory Wolfe <Cory.Wolfe@colostate.edu>,
+  "Castle,Jake" <Jake.Castle@colostate.edu>,
+  Noelle Noyes <nnoyes@umn.edu>,
+  Charlene Jackson <charlene.jackson@ars.usda.gov>,
+  Sushim <sushimgupta@gmail.com>,
+  Dustin Loy <jdloy@unl.edu>,
+  "Epperson, Bill" <epperson@cvm.msstate.edu>,
+  Will Crosby <wbc95@msstate.edu>,
+  "lari.hiott@ars.usda.gov" <lari.hiott@ars.usda.gov>,
+  "Karisch, Brandi" <brandi.karisch@msstate.edu>,
+  "Blanton, John" <john.blanton@msstate.edu>
+  
+* Main take-aways for my part of the project
+  * We will use CATCH, developed by the Broad institute, to create baits for enrichment of M. haemolytica. 
+  * Goal is to use Mike Clawson's 69 genomes to create the baits
+  * Further discussion warranted regarding the fine-tuning of the bait design.
+  * Paul sent me zipped file of 34 genomes to begin experimenting with CATCH.
+  
 
-```bash
-# navigate into AmrPlusPlus repository
-$ cd amrplusplus_v2/
 
-# command to run the amrplusplus pipeline
-$ nextflow run main_AmrPlusPlus_v2.nf -profile singularity --output test_results
-
-# change directories to view pipeline outputs
-$ cd test/
-```
 
 
