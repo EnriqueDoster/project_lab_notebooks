@@ -11,11 +11,11 @@ Title of Proposal: How does analytic approach impact pathogen population structu
 
 Table of Contents
 -----
-[Main project resources](#main-project-resources)
-[Current tasks](#current-tasks)
-[Milestones](#milestones)
-[Monthly project status](#monthly-project-status)
-[Lab Journal](#lab-journal)
+* [Main project resources](#main-project-resources)
+* [Current tasks](#current-tasks)
+* [Milestones](#milestones)
+* [Monthly project status](#monthly-project-status)
+* [Lab Journal](#lab-journal)
 
 ## Main project resources
 
