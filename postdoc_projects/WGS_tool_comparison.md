@@ -11,11 +11,14 @@ Title of Proposal: How does analytic approach impact pathogen population structu
 
 Table of Contents
 -----
-[Main project resources][#main-project-resources]
-
+[Main project resources](#main-project-resources)
+[Current tasks](#current-tasks)
+[Milestones](#milestones)
+[Monthly project status](#monthly-project-status)
+[Lab Journal](#lab-journal)
 
 ## Main project resources
------
+
 [WGS pipeline github](https://github.com/TheNoyesLab/WGS_SNP_pipelines)
 
 SFTP site: ftp.ncbi.nlm.nih.gov/pathogen/
@@ -28,14 +31,13 @@ SFTP site: ftp.ncbi.nlm.nih.gov/pathogen/
   - Listeria monocytogenes - 11,172 genomes
     * /panfs/roc/risdb_new/genometrakr/listeria_monocytogenes
 
-Current Tasks
------
+## Current Tasks
 
   1. Create pipeline with all WGS analysis tools
   2. Run on Listeria genomes
   
-Milestones
------
+## Milestones
+
 ![Milestones](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/docs/FMPRE_WGS_timeline.png "timeline")
 
 | Status | Milestones| Date  | Description  |
@@ -52,8 +54,7 @@ Milestones
     
     
     
-Project status
------
+## Monthly project status
 
 - January 2020: 
   * Goals: 
@@ -118,7 +119,7 @@ Project status
 
 
 ***
-Lab journal
+## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
 
