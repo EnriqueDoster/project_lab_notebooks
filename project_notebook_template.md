@@ -24,7 +24,7 @@ Table of Contents
   
 ## Milestones
 
-![Milestones](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/docs/FMPRE_WGS_timeline.png "timeline")
+![Milestones]( "timeline")
 
 | Status | Milestones| Date  | Description  |
 | -------| ------------- |:------------:| ------------|
