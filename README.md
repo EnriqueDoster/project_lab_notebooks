@@ -26,7 +26,7 @@ Postdoc projects
 Misc projects
 ----------------
 * HBS microbiome sequencing
- ** 16S analysis was completed, next step is to begin manuscript writing
+  * 16S analysis was completed, next step is to begin manuscript writing
 * Rumen sequencing project
 
 Collaborive projects
