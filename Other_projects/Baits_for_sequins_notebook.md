@@ -45,7 +45,7 @@ https://github.com/sequinstandards/Anaquin
   * Notes:
     * 
   * Accomplished: 
-    * Downloaded all sequences from 
+    * Downloaded all sequences from Anaquin and created probes with the CATCH software
 
 
 ***
@@ -54,7 +54,7 @@ https://github.com/sequinstandards/Anaquin
 
 
 ### 2019-1-13
-* I downloaded the anequin github repository and created probes using the "design.py" script from CATCH. The metasequin_sequences_3.0.fa file contained 178 sequences and 3348 probes were created using the following command:
+* I downloaded the anaquin github repository and created probes using the "design.py" script from CATCH. The metasequin_sequences_3.0.fa file contained 178 sequences and 3348 probes were created using the following command:
 
 '''
 design.py metasequin_sequences_3.0.fa -pl 120 -ps 120 -o metasequin_sequences_3.0.fa.probes.fasta --max-num-processes 10 --verbose --small-seq-skip 120
