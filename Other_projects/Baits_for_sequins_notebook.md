@@ -1,7 +1,6 @@
-Title of Proposal:
+Goal: Create Agilent baits for enrichment Sequins spike-in sequences.
 ------------
 
-Project summary
 
 
 Table of Contents
@@ -14,13 +13,21 @@ Table of Contents
 
 ## Main project resources
 
-[github page](https://github.com/TheNoyesLab/NCBA_rumen_project)
+We'll use the same pipeline we created for making pathogen-specific Agilent baits.
+[Bait creation github page](https://github.com/EnriqueDoster/bait_creation_pipeline)
 
+* ANAQUIN: a software toolkit for the analysis of spike-in controls for next generation sequencing 
+  * https://academic.oup.com/bioinformatics/article/33/11/1723/2959850
+
+* Synthetic microbe communities provide internal reference standards for metagenome sequencing and analysis
+  * https://www.nature.com/articles/s41467-018-05555-0
+
+https://github.com/sequinstandards/Anaquin
 
 
 ## Current Tasks
 
-  1. Write more tasks!
+  1. Identify all Sequins sequences and run the bait creation pipeline.
   
 ## Milestones
 
@@ -33,12 +40,12 @@ Table of Contents
     
 ## Monthly project status
 
-- October 2019:
-  * Goal: 
+- January 2020:
+  * Goal: Find all Sequins sequences
   * Notes:
     * 
   * Accomplished: 
-    * 
+    * Downloaded all sequences from 
 
 
 ***
@@ -46,5 +53,9 @@ Table of Contents
 ---------------------------------------------------------------------------------------------------------------
 
 
-### 2019-1-12
+### 2019-1-13
+* I downloaded the anequin github repository and created probes using the "design.py" script from CATCH. The metasequin_sequences_3.0.fa file contained 178 sequences and 3348 probes were created using the following command:
 
+'''
+design.py metasequin_sequences_3.0.fa -pl 120 -ps 120 -o metasequin_sequences_3.0.fa.probes.fasta --max-num-processes 10 --verbose --small-seq-skip 120
+'''
