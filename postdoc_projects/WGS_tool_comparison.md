@@ -125,19 +125,22 @@ SFTP site: ftp.ncbi.nlm.nih.gov/pathogen/
 
 ### 2019-1-13
 * kSNP3 finished running for 194 samples, here is the nextflow output:
+
 '''
-nextflow run main_test_ksnp3.nf --reference_genome /scratch.global/test_WGS/ref_genome.fasta --reads '/scratch.global/test_WGS/test_genomes/*_{1,2}.fastq' -profile singularity --output test_WGS_combined -resume
-N E X T F L O W  ~  version 19.04.1
-Launching `main_test_ksnp3.nf` [insane_galileo] - revision: 8deb467d88
-[warm up] executor > local
-executor >  local (196)
-[46/760424] process > RunFastqConvert [100%] 194 of 194 ✔
-[4a/ffd5da] process > RunMakeList     [100%] 1 of 1 ✔
-[7a/5f0162] process > RunKSNP3        [100%] 1 of 1 ✔
-Completed at: 13-Jan-2020 16:55:15
-Duration    : 1h 48m 35s
-CPU hours   : 5.4
-Succeeded   : 196
+
+#nextflow run main_test_ksnp3.nf --reference_genome /scratch.global/test_WGS/ref_genome.fasta --reads #'/scratch.global/test_WGS/test_genomes/*_{1,2}.fastq' -profile singularity --output test_WGS_combined -resume
+#N E X T F L O W  ~  version 19.04.1
+#Launching `main_test_ksnp3.nf` [insane_galileo] - revision: 8deb467d88
+#[warm up] executor > local
+#executor >  local (196)
+#[46/760424] process > RunFastqConvert [100%] 194 of 194 ✔
+#[4a/ffd5da] process > RunMakeList     [100%] 1 of 1 ✔
+#[7a/5f0162] process > RunKSNP3        [100%] 1 of 1 ✔
+#Completed at: 13-Jan-2020 16:55:15
+#Duration    : 1h 48m 35s
+#CPU hours   : 5.4
+#Succeeded   : 196
+
 '''
 
 ### 2019-1-7
