@@ -15,11 +15,13 @@
 
 
 
-## Last updated on: January 8, 2019
+## Last updated on: January 13, 2019
 
 Postdoc projects
 ----------------
 * [Mannheimia_baits](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/Mannheimia_baits.md)
+* [Sequins Baits](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/Other_projects/Baits_for_sequins_notebook.md)
+  * Created first bait design resulting in 3348 probes.
 * [WGS_tool_comparison](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/WGS_tool_comparison.md)
 * [Educational materials](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/Educational_materials.md)
 
