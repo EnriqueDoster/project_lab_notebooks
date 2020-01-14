@@ -9,10 +9,14 @@ Title of Proposal: How does analytic approach impact pathogen population structu
   * genome comparison approach (i.e., using SNPs, k-mers, gene-by-gene alleles, or functional domains).
 * Additionaly, we wil provide information regarding the usability of different WGS pipelines and NCBI's pathogen genome database.
 
+## Current Tasks
+
+  1. Create script to parse the metadata file and download genomes as part of the pipeline
+  2. Run pipeline on test set of genomes and finalize erasing temporary files
+
 Table of Contents
 -----
 * [Main project resources](#main-project-resources)
-* [Current tasks](#current-tasks)
 * [Milestones](#milestones)
 * [Monthly project status](#monthly-project-status)
 * [Lab Journal](#lab-journal)
@@ -31,10 +35,7 @@ SFTP site: ftp.ncbi.nlm.nih.gov/pathogen/
   - Listeria monocytogenes - 11,172 genomes
     * /panfs/roc/risdb_new/genometrakr/listeria_monocytogenes
 
-## Current Tasks
 
-  1. Create pipeline with all WGS analysis tools
-  2. Run on Listeria genomes
   
 ## Milestones
 
