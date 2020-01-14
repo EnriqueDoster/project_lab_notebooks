@@ -53,9 +53,19 @@ https://github.com/sequinstandards/Anaquin
 ---------------------------------------------------------------------------------------------------------------
 
 
+### 2019-1-14
+
+* I figured out the bait design nextflow script was not working properly on sequins because the fasta file contains sequences shorter than the desired probe length (120).
+'''
+nextflow run main_bait_design.nf --input_fasta /home/enriquedoster/Dropbox/Projects/sequins_bait_design/metasequin_sequences_3.0.fa -profile local --output /home/enriquedoster/Dropbox/Projects/sequins_bait_design/test_sequins --probe_length 120
+'''
+
+
 ### 2019-1-13
 * I downloaded the anaquin github repository and created probes using the "design.py" script from CATCH. The metasequin_sequences_3.0.fa file contained 178 sequences and 3348 probes were created using the following command:
 
 '''
 design.py metasequin_sequences_3.0.fa -pl 120 -ps 120 -o metasequin_sequences_3.0.fa.probes.fasta --max-num-processes 10 --verbose --small-seq-skip 120
 '''
+
+
