@@ -123,6 +123,23 @@ SFTP site: ftp.ncbi.nlm.nih.gov/pathogen/
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
+### 2019-1-16
+* Received email from Tom Kono that we should be able to work with MSI to integrate our pipeline with their tools. Here is the email:
+
+```
+Hello,
+
+Thank you for your patience! We have discussed the pipelined analysis idea and it should work well with the goals of the University of Minnesota Informatics Institute (UMII; https://research.umn.edu/units/umii). Their director is Dr. Thomas Pengo (tpengo@umn.edu), and he should be able to provide more detailed information about what support they can offer for developing workflows for large-scale data retrieval and metadata processing. He may have input regarding strategies for sharing the GenomeTrakr databases across research groups at the university, too.
+
+With regard to the disk usage in scratch, that should work well with our policies around scratch usage. However, please do let us know when you plan to start working with the high-volume files in scratch, so we can make sure that the system will be able to handle it. Please let us know if you have additional questions, thank you!
+--
+Tom Kono
+RIS Analyst | Minnesota Supercomputing Institute | msi.umn.edu
+117 Pleasant Street S.E., 553 Walter Library
+University of Minnesota | umn.edu
+konox006@umn.edu | 612-626-4971
+```
+
 
 ### 2019-1-13
 * kSNP3 finished running for 194 samples, here is the nextflow output:
@@ -141,6 +158,8 @@ Duration    : 1h 48m 35s
 CPU hours   : 5.4
 Succeeded   : 196
 ```
+
+
 
 ### 2019-1-7
 * I had a meeting with Noelle to evaluate the plan for running WGS pipelines on MSI. The original proposal consisted of running all 200k Salmonella genomes, but we are not allowed to download all of these genomes because it would take up too much space on MSI. We adapted to make the subset of genomes submitted by GenomeTrakr the "whole data set", which for Salmonella enterica consisted of 40K genomes. Instead, I think we could download the genomes in-line and delete them right after running the pipeline. Now, we just need permission to temporarily take up ~80-100TB of space for each genome. I will check in with MSI to see if they would allow it and I'll optimize the pipeline to make sure we delete unnecessary files. 
