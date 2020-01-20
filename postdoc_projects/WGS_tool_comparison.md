@@ -123,7 +123,16 @@ SFTP site: ftp.ncbi.nlm.nih.gov/pathogen/
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
-### 2019-1-16
+
+### 2020-1-18
+* After dealing with troubleshooting the combined WGS pipeline, I started a run on the 10K Listeria genomes from the GenomeTrakr database. 
+
+```
+Jan-18 12:57:59.124 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main_test_combined.nf --reference_genome /scratch.global/test_WGS/ref_L_monocytogenes_NC_003210.fasta --reads '/panfs/roc/risdb_new/genometrakr/listeria_monocytogenes/*_{1,2}.fastq.gz' -profile singularity --output /scratch.global/test_WGS/WGS_SNP_pipelines/GenomeTrakr_Listeria -resume --threads 6
+```
+
+
+### 2020-1-16
 * Received email from Tom Kono that we should be able to work with MSI to integrate our pipeline with their tools. Here is the email:
 
 ```
@@ -141,7 +150,7 @@ konox006@umn.edu | 612-626-4971
 ```
 
 
-### 2019-1-13
+### 2020-1-13
 * kSNP3 finished running for 194 samples, here is the nextflow output:
 
 ```
@@ -161,7 +170,7 @@ Succeeded   : 196
 
 
 
-### 2019-1-7
+### 2020-1-7
 * I had a meeting with Noelle to evaluate the plan for running WGS pipelines on MSI. The original proposal consisted of running all 200k Salmonella genomes, but we are not allowed to download all of these genomes because it would take up too much space on MSI. We adapted to make the subset of genomes submitted by GenomeTrakr the "whole data set", which for Salmonella enterica consisted of 40K genomes. Instead, I think we could download the genomes in-line and delete them right after running the pipeline. Now, we just need permission to temporarily take up ~80-100TB of space for each genome. I will check in with MSI to see if they would allow it and I'll optimize the pipeline to make sure we delete unnecessary files. 
 
 
