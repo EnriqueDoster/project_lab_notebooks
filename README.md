@@ -4,18 +4,17 @@
 ## Current tasks:
 ### updated January 8,2019
 * Noelle
-  * Contact MSI about using ~80TB on scratch.global to run WGS pipelines
-  * Create short list of all relevant questions for NCBI/GenomeTrakr
-  * Begin writing methods for accessing genomes in the pathogen database.
+  * Update WGS pipeline to download genomes from file with list of SRA values
+  * Keep writing methods for accessing genomes in the pathogen database.
 * Paul
-  * Pick final design for M. haemolytica 69 genome dataset
-  * Send final figures for PEI milk bulk tank project.
-  * Send final figures for Weese project
+  * Test baits against Clawson paper genes
+  * Re-organize data run for project 7 data
+  
 
 
 
 
-## Last updated on: January 13, 2019
+## Last updated on: January 20, 2020
 
 Postdoc projects
 ----------------
