@@ -123,6 +123,13 @@ SFTP site: ftp.ncbi.nlm.nih.gov/pathogen/
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
+### 2020-1-28
+
+* I emailed MSI for help with troubleshooting the weird errors I was getting when trying to run the pipeline using the scheduler. 
+* Matt Mix is helping look into the issue.
+
+### 2020-1-27
+* I mostly figured out how to get the WGS pipelines running on MSI's scheduler, but I keep getting errors from the queueing system. First, it wasn't registering how much wall time I was requesting and then I started getting a generic error message saying my request was denied "administratively". 
 
 ### 2020-1-18
 * After dealing with troubleshooting the combined WGS pipeline, I started a run on the 10K Listeria genomes from the GenomeTrakr database. 
