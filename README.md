@@ -2,13 +2,19 @@
 
 
 ## Current tasks:
-### updated January 8,2019
+### updated January 28,2019
 * Noelle
-  * Update WGS pipeline to download genomes from file with list of SRA values
-  * Keep writing methods for accessing genomes in the pathogen database.
+  * Run rumen project data through AMR++
+  * Confirm with MSI that we can run the full pipeline, fix queueing issues
+  * Connect with Fred Dulles (dulles@umn.edu)
+  * Start project 7 run
+  * Find conference to present Noelle's work
 * Paul
   * Test baits against Clawson paper genes
-  * Re-organize data run for project 7 data
+  * Prep TAMU server for AMR++ run
+  * Fort collins draft
+  * Progress on USDA projects 3-4
+  
   
 
 
