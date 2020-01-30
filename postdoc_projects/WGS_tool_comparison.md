@@ -123,6 +123,21 @@ SFTP site: ftp.ncbi.nlm.nih.gov/pathogen/
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
+### 2020-1-30
+* Since starting the pipeline run on the 10,901 Listeria genomes on the 18th, the pipeline is still running on Noelle's server.
+
+  * ~> TaskHandler[id: 10902; name: RunCFSAN; status: RUNNING; exit: -; error: -; workDir: /scratch.global/test_WGS/WGS_SNP_pipelines/work/e6/9295557270be62e52feb0bb07ee763]
+  * ~> TaskHandler[id: 10904; name: RunLYVESET (null); status: RUNNING; exit: -; error: -; workDir: /scratch.global/test_WGS/WGS_SNP_pipelines/work/5f/722bfac9accc65677ce2411ce4649c]
+  * ~> TaskHandler[id: 10905; name: RunKSNP3 (null); status: RUNNING; exit: -; error: -; workDir: /scratch.global/test_WGS/WGS_SNP_pipelines/work/87/505b1b6c841c119b88ccf4ae8ac6c1]
+
+* It seems only Lyveset has an easy way of checking the progress. I need to see if there is a "verbose" option for CFSAN-snp and kSNP3
+```
+grep -c "Mapping to create" /scratch.global/test_WGS/WGS_SNP_pipelines/work/5f/722bfac9accc65677ce2411ce4649c/Lyveset_results/log/launch_set.log
+2688 Listeria genomes have been mapped so far
+
+```
+
+
 ### 2020-1-28
 
 * I emailed MSI for help with troubleshooting the weird errors I was getting when trying to run the pipeline using the scheduler. 
