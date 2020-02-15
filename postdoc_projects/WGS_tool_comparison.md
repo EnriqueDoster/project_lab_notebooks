@@ -123,6 +123,34 @@ SFTP site: ftp.ncbi.nlm.nih.gov/pathogen/
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
+
+### 2020-2-14
+* Started the dowload of all Salmonella genomes again, using the right location, and spreading up the fastq-dump commands into 4 different "SBATCH" scripts that each uses a node and "parallel" to use all 24 threads at once.
+
+```
+Feb-14 15:28:08.023
+nextflow run main_combined_pipeline.nf --reference_genome /scratch.global/test_WGS/ref_Ecoli_NC_000913.fasta --reads '/scratch.global/test_WGS/test_genomes/*_{1,2}.fastq' -profile singularity_pbs --output /scratch.global/test_WGS/WGS_SNP_pipelines/GenomeTrakr_EcoliShigella_qsub --threads 128 -w qsub_work_small_ecoli -resume
+```
+Here's how much time each took for XX samples.
+* CFSAN-snp
+  * 7 hours
+  * 4.6GB
+* kSNP3
+  * 7.5 hours
+  * 190GB
+  * There was still somethign wrong with the kSNP3 results so I will run again using -trace and -report on nextflow
+* Lyveset
+  * 30 minutes
+  * 43 GB
+
+
+### 2020-2-10
+* After dealing with "singularity" issues on mesabi since the 5th of February, everything was back to normal on the 10th and I started getting everything going again. However, this time we decided to not run the Listeria genomes and focus on the large Salmonella dataset. A few things:
+  * I made a big mistake with the sra "prefetch" command as I didn't understand that those files were being downloaded by default to my home folder and the ~200k files quickly overloaded our server. Changing the location of the output folder was not straightforward and I had to edit the configuration file like this:
+  ```
+  echo "/repository/user/main/public/root = \"/scratch.global/edoster_sra/\"" > $HOME/.ncbi/user-settings.mkfg
+  ```
+
 ### 2020-1-30
 * Since starting the pipeline run on the 10,901 Listeria genomes on the 18th, the pipeline is still running on Noelle's server.
 
