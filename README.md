@@ -2,7 +2,7 @@
 
 
 ## Current tasks:
-### updated January 28,2019
+### updated February 18,2019
 * Noelle
   * Run rumen project data through AMR++
   * Confirm with MSI that we can run the full pipeline, fix queueing issues
@@ -16,11 +16,6 @@
   * Progress on USDA projects 3-4
   
   
-
-
-
-
-## Last updated on: January 20, 2020
 
 Postdoc projects
 ----------------
