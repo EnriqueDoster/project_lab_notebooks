@@ -2,7 +2,7 @@
 
 
 ## Current tasks:
-### updated February 18,2019
+### updated February 18, 2020
 * Noelle
   * Run rumen project data through AMR++
   * Confirm with MSI that we can run the full pipeline, fix queueing issues
@@ -12,7 +12,6 @@
 * Paul
   * Test baits against Clawson paper genes
   * Prep TAMU server for AMR++ run
-  * Fort collins draft
   * Progress on USDA projects 3-4
   
   
