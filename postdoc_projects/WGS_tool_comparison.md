@@ -123,6 +123,15 @@ SFTP site: ftp.ncbi.nlm.nih.gov/pathogen/
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
+### 2020-2-17
+* Salmonella genomes still downloading. It was taking to long, so I split up the sra values into groups of 50k genomes at a time
+```
+19711406.mesabim1.msi.  edoster     small    part1_dump.sh     13180     1     24       5gb  96:00:00 R  54:46:27
+19711426.mesabim1.msi.  edoster     small    part2_dump.sh     10169     1     24       5gb  96:00:00 R  54:44:43
+19714384.mesabim1.msi.  edoster     small    part3_dump.sh      4696     1     24       5gb  96:00:00 R  43:36:52
+19714394.mesabim1.msi.  edoster     small    part4_dump.sh     13068     1     24       5gb  96:00:00 R  43:35:54
+```
+* I'm downloading the Escherichia coli genomes using Noelle's account
 
 ### 2020-2-14
 * Started the dowload of all Salmonella genomes again, using the right location, and spreading up the fastq-dump commands into 4 different "SBATCH" scripts that each uses a node and "parallel" to use all 24 threads at once.
