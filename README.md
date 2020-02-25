@@ -43,7 +43,7 @@ Collaborive projects
 
 PhD projects
 ----------------
-* USDA projects 3 and 4
+* [USDA projects 3 and 4](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/PhD_projects/USDA_projs_3%264.md)
 * FC ground beef project
 
 
