@@ -35,7 +35,9 @@ SFTP site: ftp.ncbi.nlm.nih.gov/pathogen/
   - Listeria monocytogenes - 11,172 genomes
     * /panfs/roc/risdb_new/genometrakr/listeria_monocytogenes
 
-
+Full database runs:
+- Salmonella enterica - 203,648 unique SRA
+  - As of 2020-02-27, only 190633 genomes have been downloaded.
   
 ## Milestones
 
