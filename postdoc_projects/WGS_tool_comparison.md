@@ -38,6 +38,8 @@ SFTP site: ftp.ncbi.nlm.nih.gov/pathogen/
 Full database runs:
 - Salmonella enterica - 203,648 unique SRA
   - As of 2020-02-27, only 190633 genomes have been downloaded.
+- Escherichia coli and Shigella - 63,674 unique SRA
+  - As of 2020-02-29, 63,459 genomes were downloaded and used for analysis
   
 ## Milestones
 
@@ -124,6 +126,13 @@ Full database runs:
 ***
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
+
+### 2020-2-29
+* Salmonella genomes
+  * After many iterations of trying to keep the downloads going for Salmonella genome, we are finally only short 8600 genomes that were not downloaded. I'm trying one more time to download these genomes and will begin the WGS analysis tomorrow, no matter which genomes are not downloaded. While it's taking even longer to make sure that these genomes can be downloaded, I want to avoid missing some genomes due to other errors like the scripts timing out or the server reset. After this attempt I will be confident moving forward with the analysis with a list of genomes that could not be downloaded.
+* Escherichia coli/Shigella genomes
+  * As of 2020-02-29, 63,459 genomes were downloaded and used for analysis
+  * Started the WGS analysis run on Noelle's account at ~5pm.
 
 ### 2020-2-17
 * Salmonella genomes still downloading. It was taking to long, so I split up the sra values into groups of 50k genomes at a time
