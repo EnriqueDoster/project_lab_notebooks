@@ -19,12 +19,13 @@
 Postdoc projects
 ----------------
 * Paul's projects
+  * [USDA project 7] (https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/USDA_project7.md)
   * [Mannheimia_baits](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/Mannheimia_baits.md)
   * [Sequins Baits](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/Other_projects/Baits_for_sequins_notebook.md)
-  * Created first bait design resulting in 3348 probes.
+
 
 * Noelle's projects
-  * [WGS_tool_comparison](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/WGS_tool_comparison.md)
+  * [WGS tool comparison](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/WGS_tool_comparison.md)
   * [Educational materials](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/Educational_materials.md)
   * [Rumen sequencing project](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/NCBA_rumen_project_notebook.md)
 
