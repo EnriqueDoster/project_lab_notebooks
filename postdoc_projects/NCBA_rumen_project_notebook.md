@@ -49,6 +49,11 @@ Table of Contents
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
+### 2020-02-21
+```
+nextflow run minor_only_AMR.nf -profile local_MSI -w /scratch.global/run_rumen_capstone/rumen_work_dir --threads 5 --reads '/home/noyes046/shared/seq_data/rumen_project_nonhost_reads/*.non.host.R{1,2}.fastq.gz' --output /scratch.global/run_rumen_capstone/Rumen_MEGARes_results -resume
+```
+
 ### 2020-2-11
 * Re-ran the AMR++ pipeline, but this time just to the nonhost step so I can backup those files in Noelle's server. 
 
