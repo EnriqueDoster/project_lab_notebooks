@@ -127,6 +127,19 @@ Full database runs:
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
+### 2020-03-15
+
+* Had to remove 20k Salmonella genomes to make space for E coli run. 
+
+### 2020-03-10
+
+* Command for running E. coli genomes on Noelle's account
+
+```
+nextflow run main_combined_pipeline.nf --reference_genome /scratch.global/Ecoli_genomes/ref_Ecoli_NC_000913.fasta --reads '/scratch.global/Ecoli_genomes/all_genomes/*_{1,2}.fastq.gz' -profile singularity_pbs --output /scratch.global/Ecoli_genomes/AllSources_EcoliShigella_WGS_results --threads 128 -w /scratch.global/Ecoli_genomes/work_WGS_ecoli -resume -with-report EcoliShigella_run_WGS.report -with-trace -with-timeline
+```
+
+
 ### 2020-2-29
 * Salmonella genomes
   * After many iterations of trying to keep the downloads going for Salmonella genome, we are finally only short 8600 genomes that were not downloaded. I'm trying one more time to download these genomes and will begin the WGS analysis tomorrow, no matter which genomes are not downloaded. While it's taking even longer to make sure that these genomes can be downloaded, I want to avoid missing some genomes due to other errors like the scripts timing out or the server reset. After this attempt I will be confident moving forward with the analysis with a list of genomes that could not be downloaded.
