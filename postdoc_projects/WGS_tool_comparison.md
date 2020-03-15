@@ -131,6 +131,8 @@ Full database runs:
 
 * Had to remove 20k Salmonella genomes to make space for E coli run. 
 
+* E coli run: 32252 fasta files so far
+
 ### 2020-03-10
 
 * Command for running E. coli genomes on Noelle's account
