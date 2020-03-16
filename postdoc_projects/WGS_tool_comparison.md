@@ -133,6 +133,15 @@ Full database runs:
 
 * E coli run: 32252 fasta files so far
 
+23T     ./all_genomes
+5.2G    ./WGS_SNP_pipelines
+53T     ./work_WGS_ecoli
+4.0G    ./AllSources_EcoliShigella_WGS_results
+76T     .
+
+
+
+
 ### 2020-03-10
 
 * Command for running E. coli genomes on Noelle's account
