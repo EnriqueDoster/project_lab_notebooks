@@ -127,8 +127,14 @@ Full database runs:
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
-### 2020-03-15
+### 2020-03-16
+* After realizing that it was taking about 6.7 minutes to process each genome and that it would take roughly another 5 days to finish the E coli analysis, I decided to quit that run and just focus on getting results for the GenomeTrakr subsets. I have to move on to dealing with the results and the amount of space being taken up is becoming an issue. I'm still in contact with the MSI help desk to explore other options.
 
+```
+./nextflow run main_combined_pipeline.nf --reference_genome /scratch.global/Ecoli_genomes/ref_Ecoli_NC_000913.fasta --reads '/panfs/roc/risdb_new/genometrakr/ecoli_and_shigella/*_{1,2}.fastq.gz' -profile singularity_pbs --output /scratch.global/Ecoli_genomes/GenomeTrakr_EcoliShigella_WGS_results --threads 128 -w /scratch.global/Ecoli_genomes/work_GenomeTrakr_WGS_ecoli -resume -with-report genomeTrakrEcoliShigella_run_WGS.report -with-trace -with-timeline
+```
+
+### 2020-03-15
 * Had to remove 20k Salmonella genomes to make space for E coli run. 
 
 * E coli run: 32252 fasta files so far
