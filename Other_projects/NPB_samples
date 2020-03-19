@@ -1,0 +1,68 @@
+Title of Proposal:
+------------
+
+Project summary
+* Sample location:
+```
+/home/noyes046/data_release/umgc/novaseq/200305_A00223_0336_AH2WFWDSXY/Noyes_Project_011_Pool_1
+/home/noyes046/data_release/umgc/novaseq/200305_A00223_0336_AH2WFWDSXY/Noyes_Project_011_Pool_5
+/home/noyes046/data_release/umgc/novaseq/200226_A00223_0330_BH2WT2DSXY/Noyes_Project_011_Pool_3
+/home/noyes046/data_release/umgc/novaseq/200226_A00223_0330_BH2WT2DSXY/Noyes_Project_011_Pool_4
+```
+
+
+
+Table of Contents
+-----
+* [Main project resources](#main-project-resources)
+* [Current tasks](#current-tasks)
+* [Milestones](#milestones)
+* [Monthly project status](#monthly-project-status)
+* [Lab Journal](#lab-journal)
+
+## Main project resources
+
+[github page](https://github.com/EnriqueDoster/project_lab_notebooks)
+
+
+
+## Current Tasks
+
+  1. Write more tasks!
+  
+## Milestones
+
+![Milestones]( "timeline")
+
+| Status | Milestones| Date  | Description  |
+| -------| ------------- |:------------:| ------------|
+| | 1      | date  | short description |
+
+    
+## Monthly project status
+
+- Month YEAR:
+  * Goal: 
+  * Notes:
+    * 
+  * Accomplished: 
+    * 
+
+
+***
+## Lab journal
+---------------------------------------------------------------------------------------------------------------
+
+
+### 2020-03-18
+ 
+* Run AMR++, only on four lanes whle we wait for the remaining lane
+
+```
+# Make symlinks to "/scratch.global/test_AMR/NPB_samples"
+# 185 samples
+
+nextflow run main_AmrPlusPlus_v2_withKraken.nf -profile local_MSI -w /scratch.global/test_AMR/work_npb_dir --threads 2 --kraken_db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_Nov2019/ --reads '/scratch.global/test_AMR/NPB_samples/*_R{1,2}_001.fastq.gz' --host '/panfs/roc/risdb/genomes/Bos_taurus/Bos_taurus_UMD_3.1/bwa/Bos_taurus_UMD_3.1.fa' --output /scratch.global/test_AMR/NPB_AMR++_results -with-report NPB_4_lanes.report -with-trace -with-timeline
+```
+
+
