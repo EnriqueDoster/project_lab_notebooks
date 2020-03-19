@@ -2,6 +2,11 @@ Title of Proposal:
 ------------
 
 Project summary
+* Hess samples = 11
+* Shi samples = 35
+* Stewart = 42
+* Wallace = 13
+101 total samples
 
 
 Table of Contents
@@ -48,6 +53,12 @@ Table of Contents
 ***
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
+
+
+### 2020-03-19
+
+Currently only 86 samples have completed the Aclame alignment and I'll have to do it in two parts.
+
 
 ### 2020-02-21
 ```
