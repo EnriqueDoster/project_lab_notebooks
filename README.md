@@ -19,7 +19,7 @@
 Postdoc projects
 ----------------
 * Paul's projects
-  * [USDA project 7] (https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/USDA_project7.md)
+  * [USDA project 7](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/USDA_project7.md)
   * [Mannheimia_baits](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/Mannheimia_baits.md)
   * [Sequins Baits](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/Other_projects/Baits_for_sequins_notebook.md)
 
