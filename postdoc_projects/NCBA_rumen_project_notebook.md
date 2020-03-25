@@ -1,12 +1,12 @@
 Title of Proposal:
 ------------
 
-Project summary
+Project summary (101 total samples)
 * Hess samples = 11
 * Shi samples = 35
 * Stewart = 42
 * Wallace = 13
-101 total samples
+
 
 
 Table of Contents
