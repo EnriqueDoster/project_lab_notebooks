@@ -54,11 +54,25 @@ Table of Contents
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
+### 2020-03-25
+
+* Remaining 15 samples finished being analyzed with ACLAME. I created the final count matrix and put the results on Noelle's storage space. 
+  * /home/noyes046/shared/projects/Rumen_project/ResistomeResults/
+* Need to map samples to the ICEBerg database now, but will wait till we get the additional 2TB computing node on April 1, 2020.
+
+```
+cd /scratch.global/run_rumen/bioinformatic-nextflow-pipelines
+
+/home/noyes046/edoster/.conda/envs/compute/bin/nextflow run minor_only_AMR.nf -profile local_MSI -w /scratch.global/run_rumen/rumen_work_dir --threads 5 --amr /home/noyes046/shared/databases/ice_berg/ICEberg_seq.fasta --reads "/home/noyes046/shared/seq_data/rumen_project_nonhost_reads/*.non.host.R{1,2}.fastq.gz" --output /scratch.global/run_rumen_capstone/Rumen_ICEberg_results -resume
+```
 
 ### 2020-03-19
 
 Currently only 86 samples have completed the Aclame alignment and I'll have to do it in two parts.
 
+```
+/home/noyes046/edoster/.conda/envs/compute/bin/nextflow run minor_only_AMR.nf -profile local_MSI -w /scratch.global/run_rumen/rumen_work_dir --threads 5 --amr /home/noyes046/shared/databases/aclame/aclame_genes_all_0.4.fasta --reads "/home/noyes046/shared/seq_data/rumen_project_nonhost_reads/*.non.host.R{1,2}.fastq.gz" --output /scratch.global/run_rumen_capstone/Rumen_ACLAME_results -resume
+```
 
 ### 2020-02-21
 ```
