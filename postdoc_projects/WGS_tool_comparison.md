@@ -127,6 +127,14 @@ Full database runs:
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
+### 2020-03-26
+
+# Ran a subset of 44 Listeria genomes used in the LYVEset manuscript, 
+* kSNP3 found: 
+Number_SNPs: 1
+$count_snps: 0
+* Now, I want to try with Salmonella (enterobase doesn't have Listeria database)
+
 ### 2020-03-16
 * After realizing that it was taking about 6.7 minutes to process each genome and that it would take roughly another 5 days to finish the E coli analysis, I decided to quit that run and just focus on getting results for the GenomeTrakr subsets. I have to move on to dealing with the results and the amount of space being taken up is becoming an issue. I'm still in contact with the MSI help desk to explore other options.
 
