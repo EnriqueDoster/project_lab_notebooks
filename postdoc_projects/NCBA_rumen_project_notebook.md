@@ -63,7 +63,7 @@ Table of Contents
 ```
 cd /scratch.global/run_rumen/bioinformatic-nextflow-pipelines
 
-/home/noyes046/edoster/.conda/envs/compute/bin/nextflow run minor_only_AMR.nf -profile local_MSI -w /scratch.global/run_rumen/rumen_work_dir --threads 5 --amr /home/noyes046/shared/databases/ice_berg/ICEberg_seq.fasta --reads "/home/noyes046/shared/seq_data/rumen_project_nonhost_reads/*.non.host.R{1,2}.fastq.gz" --output /scratch.global/run_rumen_capstone/Rumen_ICEberg_results -resume
+/home/noyes046/edoster/.conda/envs/compute/bin/nextflow run minor_only_AMR.nf -profile local_MSI -w /scratch.global/run_rumen_capstone/rumen_work_dir --threads 5 --amr /home/noyes046/shared/databases/ice_berg/ICEberg_seq.fasta --reads "/home/noyes046/shared/seq_data/rumen_project_nonhost_reads/*.non.host.R{1,2}.fastq.gz" --output /scratch.global/run_rumen_capstone/Rumen_ICEberg_results -resume
 ```
 
 ### 2020-03-19
