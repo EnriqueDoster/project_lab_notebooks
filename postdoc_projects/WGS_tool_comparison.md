@@ -126,6 +126,17 @@ Full database runs:
 ***
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
+### 2020-04-06
+* We got word that our computing node with 2TB memory is now available,but we still don't have confirmation on the additional 180TB of storage space that Noelle purchased.
+* For now, I tried the updated version of the pipeline scripts with the 34 Salmonella genomes on the cn1107 node with the following command:
+```
+/home/noyes046/edoster/.conda/envs/compute/bin/nextflow run main_combined_pipeline.nf --reference_genome /scratch.global/Salmonella_WGS/outbreak_WGS_SNP_pipelines/Senterica_LT2_ref_genome.fasta --reads "/scratch.global/Salmonella_WGS/outbreak_salmonella_genomes/*_{1,2}.fastq.gz" -profile singularity --output /scratch.global/Salmonella_WGS/outbreak_S_enterica_WGS_results --threads 41 -w /scratch.global/Salmonella_WGS/work_senterica_outbreak -resume -with-report outbreak_Senterica_WGS_tools.report -with-trace -with-timeline
+```
+
+
+### 2020-03-28
+* I was able to run the pipelines on my personal computer on a subet of 39 *S. enterica* genomes associated with a multi-state outbreak. 
+  * Seems like the issues were with the singularity container and with running Lyve-SET on the queuing system.
 
 ### 2020-03-26
 
