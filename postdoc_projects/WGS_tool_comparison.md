@@ -126,6 +126,20 @@ Full database runs:
 ***
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
+
+### 2020-04-07
+* Still getting an error from lyve-set when running it on the server (didn't get the error on my computer):
+```
+launch_varscan.pl: varscan2: Concatenating all the VCFs
+sort -k1,1d -k2,2n
+sort: cannot create temporary file in '': Read-only file system
+QSUB ERROR
+36096
+launch_set.pl: Schedule::SGELK::command: ERROR with command: Inappropriate ioctl for device
+  /usr/bin/perl Lyveset_results/log/SGELK/qsub.208010.pl
+Stopped at /lyve-SET/scripts/../lib/Schedule/SGELK.pm line 661.
+```
+
 ### 2020-04-06
 * We got word that our computing node with 2TB memory is now available,but we still don't have confirmation on the additional 180TB of storage space that Noelle purchased.
 * For now, I tried the updated version of the pipeline scripts with the 34 Salmonella genomes on the cn1107 node with the following command:
