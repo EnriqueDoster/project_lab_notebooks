@@ -55,13 +55,20 @@ Table of Contents
 ***
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
+### 2020-04-07
+
+# Run AMR++ analysis with the AMR snps
+# Run on cn1107
+```
+nextflow run minor_AMR_SNP_detection.nf -profile local_MSI -w /scratch.global/run_proj7/work2_dir_AMR --threads 20 --reads '/home/noyes046/shared/projects/proj7_results/NonHostReads/*.non.host.R{1,2}.fastq.gz' --output /scratch.global/run_proj7/proj7_AMRPlusPlus_results -resume -with-report non_host_run.report -with-trace -with-timeline
+```
+
 
 ### 2020-03-07
 
+
 ```
 nextflow run rm_other_host.nf -profile local_MSI -w /scratch.global/run_proj7/work2_dir_nonhost --threads 6 --reads '/home/noyes046/shared/projects/proj7_results/NonHostReads/*.non.host.R{1,2}.fastq.gz' --output /scratch.global/run_proj7/proj7_all_hosts_removed --host /scratch.global/run_proj7/proj7_4hosts.fa -resume -with-report non_host_run.report -with-trace -with-timeline
-
-
 ```
 
 
