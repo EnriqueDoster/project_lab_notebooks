@@ -55,10 +55,21 @@ Table of Contents
 ***
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
-### 2020-04-07
 
-# Run AMR++ analysis with the AMR snps
-# Run on cn1107
+### 2020-04-12
+* The AMR++ run failed and there were less files in the working directory then when I first started the run. Still not sure why files are being deleted when MSI says they don't actually remove files automatically.
+
+* Trying everything again, but with the new storage space.
+  * /tempalloc/noyes042/
+
+```
+nextflow run minor_AMR_SNP_detection.nf -profile local_MSI -w /tempalloc/noyes042/proj7/work_dir_AMR --threads 10 --reads '/home/noyes046/shared/projects/proj7_results/NonHostReads/*.non.host.R{1,2}.fastq.gz' --output /tempalloc/noyes042/proj7/proj7_AMRPlusPlus_results -resume -with-report non_host_run.report -with-trace -with-timeline
+```
+
+
+### 2020-04-07
+* Run AMR++ analysis with the AMR snps
+* Run on cn1107, but the working directory is still in scratch.global
 ```
 nextflow run minor_AMR_SNP_detection.nf -profile local_MSI -w /scratch.global/run_proj7/work2_dir_AMR --threads 20 --reads '/home/noyes046/shared/projects/proj7_results/NonHostReads/*.non.host.R{1,2}.fastq.gz' --output /scratch.global/run_proj7/proj7_AMRPlusPlus_results -resume -with-report non_host_run.report -with-trace -with-timeline
 ```
