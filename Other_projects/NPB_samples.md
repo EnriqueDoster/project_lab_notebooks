@@ -87,19 +87,6 @@ ln -s /home/noyes046/data_release/umgc/novaseq/200226_A00223_0330_BH2WT2DSXY/Noy
 
 ```
 
-### 2020-03-14
-
-* Also ran the CF samples
-```
-cat /panfs/roc/risdb/genomes/Canis_lupus/canFam3/seq/canFam3.fa /panfs/roc/groups/11/noyes046/shared/genomes/eukaryotic_genomes/Cassava/GCF_001659605.1_Manihot_esculenta_v6_genomic.fna > combined_k9_cassava.fa
-
-
-/tempalloc/noyes042/amazonian_k9
-
-nextflow run main_AmrPlusPlus_v2_withKraken.nf -profile local_MSI -w /tempalloc/noyes042/amazonian_k9/work_k9 --threads 10 --kraken_db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_Nov2019/ --reads '/scratch.global/test_AMR/NPB_samples/CF*_R{1,2}_001.fastq.gz' --host '/tempalloc/noyes042/amazonian_k9/combined_k9_cassava.fa' --output /tempalloc/noyes042/amazonian_k9/amazonian_k9_AMR++_results -with-report CF_samples.report -with-trace -with-timeline
-
-
-```
 
 
 
