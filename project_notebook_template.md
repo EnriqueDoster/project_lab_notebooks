@@ -17,7 +17,6 @@ Table of Contents
 [github page](https://github.com/EnriqueDoster/project_lab_notebooks)
 
 
-
 ## Current Tasks
 
   1. Write more tasks!
@@ -46,5 +45,5 @@ Table of Contents
 ---------------------------------------------------------------------------------------------------------------
 
 
-### 2019-01-12
+### YYYY-MM-DD
 
