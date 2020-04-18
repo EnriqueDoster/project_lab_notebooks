@@ -54,6 +54,29 @@ Table of Contents
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
+
+### 2020-04-18
+* Accidentally forgot to remove the sheep genome from the Shi samples. Will run the pipelines all over again for those 35 Shi samples.
+* Dowloaded the Shi samples again, ran into --max-size error of 45GB. Failed to download one sample with prefetch and tried doing "fastq-dump" directly.
+  * 2020-04-18T14:07:33 prefetch.2.8.2: 1) failed to download SRR873610
+
+
+* Now that we have the temporary space allocation, I'll just run the AMR++ with MEGARes and kraken2, instead of first getting the nonhost reads/
+
+
+
+```
+
+
+
+nextflow run main_AmrPlusPlus_v2_withKraken.nf -profile local_MSI -w /tempalloc/noyes042/rumen_shi/rumen_work_dir --threads 4 --reads '/tempalloc/noyes042/rumen_shi/shi_samples/*.R{1,2}.fastq.gz' --output /tempalloc/noyes042/rumen_shi/Shi_rumen_kraken_results --kraken_db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_Nov2019/ -resume
+
+
+
+```
+
+
+
 ### 2020-03-25
 
 * Remaining 15 samples finished being analyzed with ACLAME. I created the final count matrix and put the results on Noelle's storage space. 
