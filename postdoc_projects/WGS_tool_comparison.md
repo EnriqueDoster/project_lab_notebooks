@@ -12,7 +12,9 @@ Title of Proposal: How does analytic approach impact pathogen population structu
 ## Current Tasks
 
   1. Create script to parse the metadata file and download genomes as part of the pipeline
-  2. Run pipeline on test set of genomes and finalize erasing temporary files
+  2. Finish making metadata subsets for each host using the pathogen isolate browser.
+  3. Determine "high-quality" dataset from IBM's genome subset
+  
 
 Table of Contents
 -----
