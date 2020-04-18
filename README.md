@@ -28,6 +28,8 @@ Postdoc projects
   * [WGS tool comparison](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/WGS_tool_comparison.md)
   * [Educational materials](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/Educational_materials.md)
   * [Rumen sequencing project](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/NCBA_rumen_project_notebook.md)
+  * [National pork board project](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/Other_projects/NPB_samples.md)
+  * [Amazonian k9 project](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/Other_projects/Amazonian_k9_project.md)
 
 Misc projects
 ----------------
