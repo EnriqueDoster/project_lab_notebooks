@@ -12,14 +12,13 @@ Main project repository
 Current Tasks
 -----
 
-  1. Run CATCH to create baits
-  
-    * Optimize with pipeline
-    
-    * Test various "design.py" flags
-  2. Improve specificity of baits
+
+  1. Improve specificity of baits
   
     * Test kraken and/or blast to identify contaminant sequences
+  2. Determine which loci are associated with different PFGE clusters.
+    * Is this different for short reads?
+   
     
 
 Current project status
