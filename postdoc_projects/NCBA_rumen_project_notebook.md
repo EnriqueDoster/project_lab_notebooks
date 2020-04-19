@@ -67,9 +67,7 @@ Table of Contents
 
 ```
 
-
-
-nextflow run main_AmrPlusPlus_v2_withKraken.nf -profile local_MSI -w /tempalloc/noyes042/rumen_shi/rumen_work_dir --threads 4 --reads '/tempalloc/noyes042/rumen_shi/shi_samples/*.R{1,2}.fastq.gz' --output /tempalloc/noyes042/rumen_shi/Shi_rumen_kraken_results --kraken_db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_Nov2019/ -resume
+nextflow run main_AmrPlusPlus_v2_withKraken.nf -profile local_MSI -w /tempalloc/noyes042/rumen_shi/rumen_work_dir --threads 4 --reads '/tempalloc/noyes042/rumen_shi/shi_samples/*_{1,2}.fastq.gz' --output /tempalloc/noyes042/rumen_shi/Shi_rumen_AMR++_results --kraken_db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_Nov2019/ -resume
 
 
 
