@@ -129,6 +129,13 @@ Full database runs:
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
+### 2020-04-19
+* Started run on small subset of Ecoli and Shigella genomes associated with poultry samples.
+```
+nextflow run main_combined_pipeline.nf --reference_genome /tempalloc/noyes042/WGS_project/WGS_SNP_pipelines/ref_Ecoli_NC_000913.fasta --reads "/tempalloc/noyes042/WGS_project/poultry_Ecoli_Shigella_genomes/*_{1,2}.fastq.gz" -profile singularity --output /tempalloc/noyes042/WGS_project/Ecoli_Shigella_poultry_WGS_results --threads 40 -w /tempalloc/noyes042/WGS_project/work_ecoli -resume -with-report Ecoli_poultry_WGS_tools.report -with-trace -with-timeline
+```
+
+
 ### 2020-04-07
 * Still getting an error from lyve-set when running it on the server (didn't get the error on my computer):
 ```
