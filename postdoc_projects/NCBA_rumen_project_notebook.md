@@ -57,8 +57,13 @@ Table of Contents
 
 ### 2020-04-18
 * Accidentally forgot to remove the sheep genome from the Shi samples. Will run the pipelines all over again for those 35 Shi samples.
-* Dowloaded the Shi samples again, ran into --max-size error of 45GB. Failed to download one sample with prefetch and tried doing "fastq-dump" directly.
+* Dowloaded the Shi samples again, ran into --max-size error of 45GB.
   * 2020-04-18T14:07:33 prefetch.2.8.2: 1) failed to download SRR873610
+* Failed to download one sample with prefetch and tried doing "fastq-dump" directly.
+  * (compute) edoster@cn1107 [/tempalloc/noyes042/rumen_shi/shi_samples] % fastq-dump --split-files --disable-multithreading --gzip SRR873610
+  2020-04-19T04:08:48 fastq-dump.2.8.2 sys: timeout exhausted while reading file within network system module - mbedtls_ssl_read returned -76 ( NET - Reading information from the socket failed )
+  Read 222939086 spots for SRR873610
+  Written 222939086 spots for SRR873610
 
 
 * Now that we have the temporary space allocation, I'll just run the AMR++ with MEGARes and kraken2, instead of first getting the nonhost reads/
