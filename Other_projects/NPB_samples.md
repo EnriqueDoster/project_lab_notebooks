@@ -64,6 +64,12 @@ Table of Contents
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
+### 2020-04-20
+* Run Shi sample analysis with sheep genome host removal.
+```
+nextflow run main_AmrPlusPlus_v2_withKraken.nf -profile local_MSI -w /tempalloc/noyes042/rumen_shi/work_npb_dir --threads 4 --kraken_db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_Nov2019/ --reads '/tempalloc/noyes042/rumen_shi/shi_samples/*_{1,2}.fastq.gz' --host '/tempalloc/noyes042/rumen_shi/GCF_002742125.1_Oar_rambouillet_v1.0_genomic.fna' --output /tempalloc/noyes042/rumen_shi/shiNPB_AMR++_results -with-report shiNPB_AMR++.report -with-trace -with-timeline
+```
+
 ### 2020-04-12
 * Run AMR++ on all samples, using cn4201 computing node
 
