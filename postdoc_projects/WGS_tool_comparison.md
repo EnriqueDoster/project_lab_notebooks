@@ -42,7 +42,32 @@ Full database runs:
   - As of 2020-02-27, only 190633 genomes have been downloaded.
 - Escherichia coli and Shigella - 63,674 unique SRA
   - As of 2020-02-29, 63,459 genomes were downloaded and used for analysis
-  
+ 
+ 
+15 datasets
+
+* High quality datasets (N=3)
+  * Based on IBM datasets
+* Random datasets (N=3)
+* Uniform datasets (N=9)
+  * Host species
+    * Salmonella enterica - human (52,449)
+    * Listeria monocytogenes - Homo sapiens(5,732)
+    * Escherichia coli - Homo sapiens(36,007)
+  * Geography
+    * Salmonella enterica - USA(180,778)
+      * Or UNITED KINGDOM(54,041)
+    * Listeria monocytogenes - USA(19,573)
+      * Or UNITED KINGDOM(3,256)
+    * Escherichia coli - USA(57,407)
+  * Sample type
+    * Salmonella enterica - raw intact chicken (5,089)
+      * Or stool (20,400) or human (52,449)
+    * Listeria monocytogenes - food(3,878)
+    * Eschirichia coli - stool(6,464) 
+      * or feces (5,336)
+ 
+ 
 ## Milestones
 
 ![Milestones](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/postdoc_projects/docs/FMPRE_WGS_timeline.png "timeline")
