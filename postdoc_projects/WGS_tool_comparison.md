@@ -154,8 +154,16 @@ Full database runs:
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
+### 2020-04-23
+* Decided to stop the run on 113 genomes. The lyveset and kSNP3 pipeline errored out without finding SNPs, whereas the CFSAN-snp was still running after 677 hours.
+* Re-start run on Salmonella outbreak genomes to test the fix to lyveset and test enterobase. 
+```
+nextflow run main_enterobase.nf --reference_genome /tempalloc/noyes042/WGS_project/WGS_SNP_pipelines/Senterica_LT2_ref_genome.fasta --reads "/tempalloc/noyes042/WGS_project/pork_salmonella_genomes/*_{1,2}.fastq.gz" -profile singularity --output /tempalloc/noyes042/WGS_project/Salmonella_pork_WGS_results --threads 40 -w /tempalloc/noyes042/WGS_project/work_ecoli -resume -with-report Salmonella_pork_WGS_tools.report -with-trace -with-timeline
+```
+
+
 ### 2020-04-19
-* Started run on small subset of Ecoli and Shigella genomes associated with poultry samples.
+* Started run on small subset of Ecoli and Shigella genomes (n = 113) associated with poultry samples.
 ```
 nextflow run main_combined_pipeline.nf --reference_genome /tempalloc/noyes042/WGS_project/WGS_SNP_pipelines/ref_Ecoli_NC_000913.fasta --reads "/tempalloc/noyes042/WGS_project/poultry_Ecoli_Shigella_genomes/*_{1,2}.fastq.gz" -profile singularity --output /tempalloc/noyes042/WGS_project/Ecoli_Shigella_poultry_WGS_results --threads 40 -w /tempalloc/noyes042/WGS_project/work_ecoli -resume -with-report Ecoli_poultry_WGS_tools.report -with-trace -with-timeline
 ```
