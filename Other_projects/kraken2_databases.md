@@ -11,3 +11,15 @@ stored_genomes/UniVec_Core/library.fna:3137
 stored_genomes/UniVec/library.fna:6093
 stored_genomes/viral/library.fna:11953
 ```
+
+kraken2-build --download-taxonomy --db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_Nov2019/
+kraken2-build --download-library archaea --db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_April2020/
+kraken2-build --download-library bacteria --db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_April2020/
+kraken2-build --download-library viral --db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_April2020/
+kraken2-build --download-library human --db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_April2020/
+kraken2-build --download-library protozoa --db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_April2020/
+kraken2-build --download-library UniVec --db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_April2020/
+kraken2-build --download-library UniVec_Core --db 
+
+Processed 368 projects (567 sequences, 956.23 Mbp)... done.
+Processed 19362 projects (42231 sequences, 78.24 Gbp)... done.
