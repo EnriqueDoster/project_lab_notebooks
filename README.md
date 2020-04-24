@@ -2,18 +2,7 @@
 
 
 ## Current tasks:
-### updated February 18, 2020
-* Noelle
-  * Run rumen project data through AMR++
-  * Confirm with MSI that we can run the full pipeline, fix queueing issues
-  * Connect with Fred Dulles (dulles@umn.edu)
-  * Start project 7 run
-  * Find conference to present Noelle's work
-* Paul
-  * Test baits against Clawson paper genes
-  * Prep TAMU server for AMR++ run
-  * Progress on USDA projects 3-4
-  
+### updated  
   
 
 Postdoc projects
