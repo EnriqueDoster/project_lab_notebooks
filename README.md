@@ -35,6 +35,7 @@ Misc projects
 ----------------
 * HBS microbiome sequencing
   * 16S analysis was completed, next step is to begin manuscript writing
+* [Kraken 2 databases](https://github.com/EnriqueDoster/project_lab_notebooks/blob/master/Other_projects/kraken2_databases.md)
 
 
 Collaborive projects
