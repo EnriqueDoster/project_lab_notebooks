@@ -64,14 +64,23 @@ Table of Contents
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
-### 2020-04-20
-* Run Shi sample analysis with sheep genome host removal.
+### 2020-04-30
+
+
+main_AmrPlusPlus_v2_withKraken.nf
+
 ```
-nextflow run main_AmrPlusPlus_v2_withKraken.nf -profile local_MSI -w /tempalloc/noyes042/rumen_shi/work_npb_dir --threads 4 --kraken_db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_Nov2019/ --reads '/tempalloc/noyes042/rumen_shi/shi_samples/*_{1,2}.fastq.gz' --host '/tempalloc/noyes042/rumen_shi/GCF_002742125.1_Oar_rambouillet_v1.0_genomic.fna' --output /tempalloc/noyes042/rumen_shi/shiNPB_AMR++_results -with-report shiNPB_AMR++.report -with-trace -with-timeline
+# /tempalloc/noyes042/NPB_samples
+
+nextflow run minor_only_AMR.nf -profile local_MSI -w /tempalloc/noyes042/NPB_samples/work_AMR --threads 6 --reads '/tempalloc/noyes042/NPB_samples/NPB_nonhost_sus_scrofa/NonHostReads/*.non.host.R{1,2}.fastq.gz' --output /tempalloc/noyes042/NPB_samples/NPB_MEGARes_sus_scrofa --host /panfs/roc/risdb/genomes/Sus_scrofa/Sscrofa10.2/seq/Sscrofa10.2.fa -resume -with-report MEGARes.report -with-trace -with-timeline
+
 ```
 
+
+
+
 ### 2020-04-12
-* Run AMR++ on all samples, using cn4201 computing node
+* Run pipeline to get nonhost reads for all samples, using cn4201 computing node
 
 ```
 # /tempalloc/noyes042/NPB_samples
