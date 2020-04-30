@@ -55,6 +55,22 @@ Table of Contents
 ---------------------------------------------------------------------------------------------------------------
 
 
+### 2020-04-30
+* Now run ACLAME analysis for shi samples
+```
+nextflow run minor_only_AMR.nf -profile local_MSI -w /tempalloc/noyes042/rumen_shi/work_aclame --threads 4 --reads '/tempalloc/noyes042/rumen_shi/shi_AMR++_results/NonHostReads/*.non.host.R{1,2}.fastq' --output /tempalloc/noyes042/rumen_shi/shi_ACLAME -with-report shi_ACLAME.report -with-trace -with-timeline --amr /home/noyes046/shared/databases/aclame/aclame_genes_all_0.4.fasta
+```
+
+
+### 2020-04-20
+* Run Shi sample analysis with sheep genome host removal.
+```
+nextflow run main_AmrPlusPlus_v2_withKraken.nf -profile local_MSI -w /tempalloc/noyes042/rumen_shi/work_npb_dir --threads 4 --kraken_db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_Nov2019/ --reads '/tempalloc/noyes042/rumen_shi/shi_samples/*_{1,2}.fastq.gz' --host '/tempalloc/noyes042/rumen_shi/GCF_002742125.1_Oar_rambouillet_v1.0_genomic.fna' --output /tempalloc/noyes042/rumen_shi/shiNPB_AMR++_results -with-report shiNPB_AMR++.report -with-trace -with-timeline
+```
+
+
+
+
 ### 2020-04-18
 * Accidentally forgot to remove the sheep genome from the Shi samples. Will run the pipelines all over again for those 35 Shi samples.
 * Dowloaded the Shi samples again, ran into --max-size error of 45GB.
