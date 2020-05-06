@@ -154,6 +154,15 @@ Full database runs:
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
+
+
+
+### 2020-05-05
+
+```
+nextflow run main_combined_pipeline.nf --reference_genome /tempalloc/noyes042/WGS_project/WGS_SNP_pipelines/ref_Ecoli_NC_000913.fasta --reads /tempalloc/noyes042/WGS_project/genomes_Ecoli_California/*_{1,2}.fastq.gz -profile singularity --output /tempalloc/noyes042/WGS_project/Ecoli_California_WGS_results --threads 40 -w /tempalloc/noyes042/WGS_project/work_ecoli -resume -with-report Ecoli_Salmonella_WGS_tools.report -with-trace -with-timeline
+```
+
 ### 2020-04-23
 * Decided to stop the run on 113 genomes. The lyveset and kSNP3 pipeline errored out without finding SNPs, whereas the CFSAN-snp was still running after 677 hours.
 * Re-start run on Salmonella outbreak genomes to test the fix to lyveset and test enterobase. 
