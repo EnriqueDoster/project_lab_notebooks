@@ -64,11 +64,13 @@ Table of Contents
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
+### 2020-05-06
+* The current run was going too slow because I had included the "dedup" step with samtools. Now, I removed those extra steps and added kraken:
+```
+nextflow run minor_AMR_and_kraken.nf -profile local_MSI -w /tempalloc/noyes042/NPB_samples/work_AMR_kraken --threads 6 --reads '/tempalloc/noyes042/NPB_samples/NPB_nonhost_sus_scrofa/NonHostReads/*.non.host.R{1,2}.fastq.gz' --output /tempalloc/noyes042/NPB_samples/NPB_MEGARes_kraken_output --kraken_db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_Nov2019/ -resume -with-report MEGARes_kraken.report -with-trace -with-timeline
+```
+
 ### 2020-04-30
-
-
-main_AmrPlusPlus_v2_withKraken.nf
-
 ```
 # /tempalloc/noyes042/NPB_samples
 
