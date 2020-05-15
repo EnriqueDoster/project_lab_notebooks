@@ -4,7 +4,7 @@ Title of Proposal:
 Project summary
 * Sample data release and new location:
 ```
-# Data release
+# Data release was as total of 232 samples
 # 47 samples
 /home/noyes046/data_release/umgc/novaseq/200305_A00223_0336_AH2WFWDSXY/Noyes_Project_011_Pool_1
 # 46
@@ -17,8 +17,11 @@ Project summary
 /home/noyes046/data_release/umgc/novaseq/200226_A00223_0330_BH2WT2DSXY/Noyes_Project_011_Pool_4
 
 
-# New location
-/home/noyes046/shared/seq_data/NPB_samples/
+# New location with symlinks
+# 216 NPB samples, 16 amazonian k9 samples
+/tempalloc/noyes042/NPB_samples/samples/
+
+
 ```
 
 
@@ -28,7 +31,6 @@ Table of Contents
 * [Main project resources](#main-project-resources)
 * [Current tasks](#current-tasks)
 * [Milestones](#milestones)
-* [Monthly project status](#monthly-project-status)
 * [Lab Journal](#lab-journal)
 
 ## Main project resources
@@ -39,33 +41,21 @@ Table of Contents
 
 ## Current Tasks
 
-  1. Write more tasks!
+  1. Running kraken2 and alignment to MEGARes with bwa (2020-05-09)
   
 ## Milestones
+ * I accidentally used the bovine genome with the AMR++ pipeline so I had to re-start the analysis using the swine genome.
+ * I ran the host DNA removal step with the swine genome and samples can be found here: /tempalloc/noyes042/NPB_samples/NPB_nonhost_sus_scrofa/NonHostReads/
+ 
 
-![Milestones]( "timeline")
-
-| Status | Milestones| Date  | Description  |
-| -------| ------------- |:------------:| ------------|
-| | 1      | date  | short description |
-
-    
-## Monthly project status
-
-- Month YEAR:
-  * Goal: 
-  * Notes:
-    * 
-  * Accomplished: 
-    * 
 
 
 ***
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
-### 2020-05-06
-* The current run was going too slow because I had included the "dedup" step with samtools. Now, I removed those extra steps and added kraken:
+### 2020-05-09
+* The current run was going too slow because I had included the "dedup" step with samtools (taking a couple of hours per sample). Instead, I removed those extra steps and added kraken:
 ```
 nextflow run minor_AMR_and_kraken.nf -profile local_MSI -w /tempalloc/noyes042/NPB_samples/work_AMR_kraken --threads 6 --reads '/tempalloc/noyes042/NPB_samples/NPB_nonhost_sus_scrofa/NonHostReads/*.non.host.R{1,2}.fastq.gz' --output /tempalloc/noyes042/NPB_samples/NPB_MEGARes_kraken_output --kraken_db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_Nov2019/ -resume -with-report MEGARes_kraken.report -with-trace -with-timeline
 ```
