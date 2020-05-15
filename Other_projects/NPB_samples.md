@@ -42,9 +42,12 @@ Project summary
 ```
 # Do any further analysis with these samples
 /tempalloc/noyes042/NPB_samples/NPB_nonhost_sus_scrofa/NonHostReads/
-
 ```
 
+## For statistical analysis of the microbiome and resistome, use the results here:
+```
+/tempalloc/noyes042/NPB_samples/NPB_MEGARes_kraken_output
+```
 
 
 Table of Contents
