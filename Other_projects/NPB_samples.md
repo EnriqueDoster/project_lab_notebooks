@@ -1,10 +1,27 @@
 Title of Proposal:
 ------------
 
+How to access on MSI
+
+```
+ssh tanxx606@login.msi.umn.edu
+ssh mesabi
+
+# Main lab directories:
+/home/noyes046/shared/ 
+
+# Currently, the NPB samples and results are in a temporary allocation here:
+/tempalloc/noyes042/NPB_samples/NPB_MEGARes_kraken_output
+
+# Two computing node options if you want to run something. Use "screen" or "nohub" to run commands without the scheduler.
+ssh cn4201 # Smaller, main computing cluster (no qsub)
+ssh cn1107 # Large computing cluster (no qsub)
+```
+
 Project summary
 * Sample data release and new location:
 ```
-# Data release was as total of 232 samples
+# Data release was as total of 232 samples (Stored here for 5 years)
 # 47 samples
 /home/noyes046/data_release/umgc/novaseq/200305_A00223_0336_AH2WFWDSXY/Noyes_Project_011_Pool_1
 # 46
@@ -16,11 +33,15 @@ Project summary
 # 46
 /home/noyes046/data_release/umgc/novaseq/200226_A00223_0330_BH2WT2DSXY/Noyes_Project_011_Pool_4
 
-
 # New location with symlinks
 # 216 NPB samples, 16 amazonian k9 samples
 /tempalloc/noyes042/NPB_samples/samples/
+```
 
+## For further analysis, use these nonhost samples:
+```
+# Do any further analysis with these samples
+/tempalloc/noyes042/NPB_samples/NPB_nonhost_sus_scrofa/NonHostReads/
 
 ```
 
@@ -53,6 +74,8 @@ Table of Contents
 ***
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
+### 2020-
+
 
 ### 2020-05-09
 * The current run was going too slow because I had included the "dedup" step with samtools (taking a couple of hours per sample). Instead, I removed those extra steps and added kraken:
