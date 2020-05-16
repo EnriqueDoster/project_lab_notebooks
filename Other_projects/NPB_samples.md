@@ -18,8 +18,7 @@ ssh cn4201 # Smaller, main computing cluster (no qsub)
 ssh cn1107 # Large computing cluster (no qsub)
 ```
 
-Project summary
-* Sample data release and new location:
+Raw sample data release and new location:
 ```
 # Data release was as total of 232 samples (Stored here for 5 years)
 # 47 samples
@@ -47,6 +46,9 @@ Project summary
 ## For statistical analysis of the microbiome and resistome, use the results here:
 ```
 /tempalloc/noyes042/NPB_samples/NPB_MEGARes_kraken_output
+
+# I also moved a copy of the count tables to this directory for storage:
+/home/noyes046/shared/projects/NPB_resistome_followon/NPB_MEGARes_results/
 ```
 
 
