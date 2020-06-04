@@ -56,7 +56,7 @@ Table of Contents
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
-### 2020-07-03
+### 2020-06-03
 * Running proj7 samples again with the kraken2 database that includes protist genomes
 ```
 nextflow run minor_kraken2.nf -profile local_MSI -w /tempalloc/noyes042/proj7/work_dir_kraken --threads 10 --reads '/home/noyes046/shared/projects/proj7_results/NonHostReads/*.non.host.R{1,2}.fastq.gz' --kraken_db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_Nov2019/ --output /tempalloc/noyes042/proj7/proj7_kraken2_results -resume -with-report kraken_run.report -with-trace -with-timeline
