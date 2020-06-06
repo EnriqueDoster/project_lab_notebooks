@@ -10,6 +10,9 @@ Project summary
   * 56 from Human waste water plants
 
 
+16S rRNA samples:
+/media/AngusStorage/backups/s/angus/h/nobackup/data/raw_sequence_data/project_7/project_7/16S_Data/*/*/*/raw_data/_*{1,2}.fq.gz
+
 Host genome
 cat /panfs/roc/risdb/genomes/Bos_taurus/Bos_taurus_UMD_3.1/bwa/Bos_taurus_UMD_3.1.fa /panfs/roc/risdb/genomes/Gallus_gallus/galGal3/bwa/galGal3.fa /panfs/roc/risdb/genomes/Sus_scrofa/Sscrofa10.2/bwa/Sscrofa10.2.fa /panfs/roc/risdb/genomes/Homo_sapiens/hg38/seq/hg38.fa > proj7_4hosts.fa
 
@@ -55,6 +58,14 @@ Table of Contents
 ***
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
+### 2020-06-03
+* Run qiime2 
+```
+conda activate qiime2-2019.10
+
+nextflow run main_qiime2.nf --reads '/media/AngusStorage/backups/s/angus/h/nobackup/data/raw_sequence_data/project_7/project_7/16S_Data/*/*/*/raw_data/*_{1,2}.fq.gz' --output /media/AngusWorkspace/Kuner_exit_feces_16S/proj7_16S local --classifier /media/AngusWorkspace/gg-13-8-99-515-806-nb-classifier.qza --threads 25
+```
+
 
 ### 2020-06-03
 * Running proj7 samples again with the kraken2 database that includes protist genomes
