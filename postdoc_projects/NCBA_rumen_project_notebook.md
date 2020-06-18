@@ -21,6 +21,8 @@ Table of Contents
 
 [github page](https://github.com/TheNoyesLab/NCBA_rumen_project)
 
+[(Mishra et. al. 2020)Exploring the eukaryotic diversity in rumen of Indian camel (Camelus dromedarius) using 18S rRNA amplicon sequencing](https://link.springer.com/article/10.1007/s00203-020-01897-w)
+
 
 
 ## Current Tasks
