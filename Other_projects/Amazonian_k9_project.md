@@ -45,6 +45,34 @@ Table of Contents
 ---------------------------------------------------------------------------------------------------------------
 
 
+
+### 2020-05-12
+
+```
+hi Noelle, 
+
+I wanted to follow regarding the metagenomic data you have generated from the dog samples. I was hoping we'd screen for echinococcus infection through Peter's lab using a PCR protocol that was applied to a project here in MN, but he suggested that we may be able to detect echinococcus infection through the metagenomic data you've generated. So, questions for you:
+
+1. you've discussed microbiome and metagenome related to the dogs....did you generate the metagenomic data in such a way that would not limit us to screening the bacterial communities, but also the parasitic communities?
+
+2. If so, do we have to be concerned that echino sequences might be buried in the total genomic data that is generated? Or can we search out those sequences using sequences available on NCBI. This is out of my wheelhouse, but something we think is important to screen for, since a) its zoonotic and b) we know its present in the system. 
+
+3. We also have some parasitology data that suggests infection with strongyle-type parasites, but would love to identify what those species might be. Is there an opportunity for that through your metagenomic data as well?
+
+Again, this is outside of my wheelhouse, but an important part of the zoonotic pathway question that hasn't yet been answered. 
+
+Thanks, 
+Tiffany
+Tiffany Wolf, DVM, PhD
+Assistant Professor
+Veterinary Population Medicine, College of Veterinary Medicine
+University of Minnesota
+wolfx305@umn.edu
+612-625-0492 (office)
+```
+
+
+
 ### 2020-04-18
 * Run was completed for k9 samples. Results were transferred to: /home/noyes046/shared/projects/Amazonian_k9_project/
 
