@@ -154,6 +154,13 @@ Full database runs:
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
+### 2020-06-18
+
+* Start running dataset #2, Listeria monocytogenes genomes from California (2173 genomes).
+
+```
+nextflow run main_combined_pipeline.nf --reference_genome /tempalloc/noyes042/WGS_project/ref_L_monocytogenes_NC_003210.fasta --reads "/tempalloc/noyes042/WGS_project/genomes_Cali_L_monocytogenes/*_{1,2}.fastq.gz" -profile singularity --output /tempalloc/noyes042/WGS_project/L_monocytogenes_California_WGS_results --threads 30 -w /tempalloc/noyes042/WGS_project/work_list -resume -with-report List_Cali_WGS_tools.report -with-trace -with-timeline
+```
 
 
 
