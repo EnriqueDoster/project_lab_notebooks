@@ -6,8 +6,8 @@
 # Tylan
 nextflow run main_qiime2.nf --reads '/s/angus/i/nobackup/data/raw_sequence_data/tylan_1/16S_liver/*H*_{1,2}.fq.gz' --output /media/AngusWorkspace/updated_tylan1_liver_abscess_qiime2_results -profile local --classifier /media/AngusWorkspace/gg-13-8-99-515-806-nb-classifier.qza --threads 8 -w /media/AngusWorkspace/run_Jake/work_tylan_liver_abscess
 
-
-
+## Feces and soil
+nextflow run main_qiime2.nf --reads '/s/angus/i/nobackup/data/raw_sequence_data/tylan_1/16S_fecal_soil/hwftp.novogene.com/data_release/raw_data/*H*_{1,2}.fq.gz' --output /media/AngusWorkspace/updated_tylan1_feces_soil_qiime2_results -profile local --classifier /media/AngusWorkspace/gg-13-8-99-515-806-nb-classifier.qza --threads 8 -w /media/AngusWorkspace/run_Jake/work_tylan_soil_feces
 
 
 # XIT
