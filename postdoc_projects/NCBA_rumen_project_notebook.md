@@ -56,6 +56,19 @@ Table of Contents
 ## Lab journal
 ---------------------------------------------------------------------------------------------------------------
 
+### 2020-11-23
+* Rubino dataset genomes had error with downloading reverse reads. Re-started downloading of just reverse reads
+
+* Start AMR++ run 
+```
+nextflow run main_AmrPlusPlus_v2_withKraken.nf -profile local_MSI -w /tempalloc/noyes042/Rumen_data/Rubino_work_dir --threads 4 --reads '/tempalloc/noyes042/Rumen_data/Rubino_raw_samples/*_{1,2}.fastq.gz' --output /tempalloc/Rumen_data/Rubino_rumen_AMR++_results --kraken_db /home/noyes046/shared/databases/kraken2_databases/Rumen_kraken_v2_Nov2019/ -resume
+
+```
+
+
+### 2020-11-21
+* Started downloading Rubino dataset genomes
+
 
 ### 2020-04-30
 * Now run ACLAME analysis for shi samples
